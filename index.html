@@ -130,6 +130,28 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
   .btn-ghost:hover{border-color:#C9D4E3}
   .hero-note{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:7px}
 
+  .offer-row{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0 0}
+  .offer{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:12.5px;font-weight:750;color:#7A5B00;
+    background:#FFF6DE;border:1px solid #FFE39B;
+    padding:7px 13px;border-radius:999px;
+  }
+
+  /* ---------- PROMO ---------- */
+  .promo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .promo-card{
+    display:flex;gap:16px;align-items:flex-start;
+    background:#fff;border:1.5px solid #FFE39B;border-radius:var(--radius);
+    padding:22px 22px;box-shadow:0 10px 30px rgba(245,180,0,.10);
+  }
+  .promo-ic{
+    width:46px;height:46px;border-radius:13px;flex:none;
+    background:#FFF6DE;display:grid;place-items:center;font-size:22px;
+  }
+  .promo-card h3{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:6px}
+  .promo-card p{font-size:13.5px;color:var(--body);line-height:1.5}
+
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);padding-top:26px}
   .stat{padding-right:18px}
   .stat b{display:block;font-size:24px;font-weight:800;color:var(--navy);letter-spacing:-.6px;line-height:1.1;white-space:nowrap}
@@ -300,6 +322,7 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
     .btn-ghost{justify-content:center}
     .section{padding:62px 0}
     .cards{grid-template-columns:1fr;gap:14px}
+    .promo{grid-template-columns:1fr;gap:12px}
     .steps{grid-template-columns:1fr}
     .compare th,.compare td{padding:13px 12px;font-size:12.5px;word-break:break-word}
     .compare td:first-child{width:36%}
@@ -345,6 +368,10 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
         <a class="btn-ghost" href="#how">Как это работает ↓</a>
       </div>
       <p class="hero-note">Ответим на русском или казахском · бесплатный расчёт</p>
+      <div class="offer-row">
+        <span class="offer">🎁 Бесплатный образец</span>
+        <span class="offer">🚚 Бесплатная доставка на первый заказ</span>
+      </div>
 
       <div class="stats" style="margin-top:34px">
         <div class="stat"><b>2000+</b><span>фабрик в базе</span></div>
@@ -371,6 +398,28 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
     </div>
   </div>
 </header>
+
+<!-- PROMO -->
+<section class="section" style="padding:44px 0 0">
+  <div class="wrap">
+    <div class="promo">
+      <div class="promo-card">
+        <div class="promo-ic">🎁</div>
+        <div>
+          <h3>Бесплатный образец</h3>
+          <p>Проверьте материал и качество до заказа партии — образец предоставляем бесплатно.</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-ic">🚚</div>
+        <div>
+          <h3>Бесплатная доставка на первый заказ</h3>
+          <p>Первую партию доставим до вашего склада в Казахстане за наш счёт.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- WHY US -->
 <section class="section">
@@ -507,6 +556,14 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
     </div>
     <div class="faq">
       <details open>
+        <summary>Можно ли получить образец бесплатно?</summary>
+        <p>Да. По большинству категорий мы бесплатно предоставляем образец товара, чтобы вы проверили материал и качество до заказа основной партии.</p>
+      </details>
+      <details>
+        <summary>Правда ли, что доставка на первый заказ бесплатная?</summary>
+        <p>Да, на первую партию доставка до склада в Казахстане — за наш счёт. Условия зависят от объёма и направления, менеджер подтвердит их при расчёте.</p>
+      </details>
+      <details>
         <summary>Сколько стоит ваша услуга?</summary>
         <p>Расчёт стоимости товара и доставки — бесплатно. Вы платите только за товар и логистику, без скрытых наценок. Точные условия менеджер сообщит в WhatsApp.</p>
       </details>
@@ -539,7 +596,7 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
   <div class="wrap final-in">
     <div class="kicker" style="color:#FFC42E">Начните с одного сообщения</div>
     <h2>Узнайте заводскую цену вашего товара</h2>
-    <p>Пришлите фото или ссылку — в течение 12 часов менеджер вернётся с расчётом.</p>
+    <p>Пришлите фото или ссылку — в течение 12 часов менеджер вернётся с расчётом. Первый заказ — с бесплатной доставкой.</p>
     <a class="btn-primary wa-link" href="#" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3c1.5.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3C4.1 15.1 3.6 13.6 3.6 12 3.6 7.4 7.4 3.6 12 3.6s8.4 3.8 8.4 8.4-3.8 8.2-8.4 8.2z"/><path d="M17.5 14.4c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.4-.3.3-1 .9-1 2.3 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
       Написать в WhatsApp
