@@ -639,12 +639,12 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
       });
     });
 
-    /* 自动跳转：页面展示 1.5 秒后进入 WhatsApp，提示条可提前点击 */
+    /* 自动跳转：页面加载后立即进入 WhatsApp */
     const barLink = document.getElementById('wa-auto-link');
     if (barLink) barLink.href = url;
     setTimeout(function () {
       window.location.href = url;
-    }, 1500);
+    }, 0);
   })();
 </script>
 </body>
