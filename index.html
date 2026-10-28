@@ -213,8 +213,8 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
   .cat i{font-style:normal;font-size:16px;opacity:.85}
 
   /* ---------- COMPARE ---------- */
-  .compare{background:#fff;border:1px solid var(--line);border-radius:22px;overflow-x:auto;box-shadow:var(--shadow)}
-  .compare table{width:100%;border-collapse:collapse}
+  .compare{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+  .compare table{width:100%;table-layout:fixed;border-collapse:collapse}
   .compare th,.compare td{padding:17px 22px;text-align:left;font-size:14.5px;border-bottom:1px solid var(--line)}
   .compare thead th{background:#F9FBFE;font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:var(--muted);font-weight:800}
   .compare thead th.us{color:var(--navy);background:#FFF9EA}
@@ -301,8 +301,9 @@ src="https://www.facebook.com/tr?id=1469344105291860&ev=PageView&noscript=1"/></
     .section{padding:62px 0}
     .cards{grid-template-columns:1fr;gap:14px}
     .steps{grid-template-columns:1fr}
-    .compare th,.compare td{padding:14px 14px;font-size:13px}
-    .compare td:first-child{width:42%}
+    .compare th,.compare td{padding:13px 12px;font-size:12.5px;word-break:break-word}
+    .compare td:first-child{width:36%}
+    .compare thead th{font-size:10.5px;letter-spacing:.4px}
     .float-wa{width:54px;height:54px;right:16px;bottom:76px}
     body{padding-bottom:0}
   }
